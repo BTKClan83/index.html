@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTK Clan - Reclutamiento Oficial</title><style>
+body{
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(135deg,#020617,#0b1120);
+color:white;
+margin:0;
+text-align:center;
+}
+
+header{
+padding:25px;
+}
+
+.logo{
+width:140px;
+border-radius:20px;
+box-shadow:0 0 25px black;
+}
+
+h1{
+color:#22c55e;
+margin-top:10px;
+}
+
+.subtitle{
+color:#cbd5e1;
+max-width:700px;
+margin:auto;
+}
+
+.container{
+max-width:650px;
+margin:25px auto;
+background:#111827;
+padding:25px;
+border-radius:18px;
+box-shadow:0 0 25px rgba(0,0,0,0.8);
+}
+
+.rules{
+text-align:left;
+background:#020617;
+padding:18px;
+border-radius:12px;
+}
+
+.rules li{
+margin:8px 0;
+}
+
+input,select{
+width:92%;
+padding:12px;
+margin:10px;
+border-radius:10px;
+border:none;
+background:#1f2937;
+color:white;
+}
+
+button{
+background:#22c55e;
+color:white;
+padding:14px 24px;
+border:none;
+border-radius:12px;
+font-size:16px;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+background:#16a34a;
+transform:scale(1.05);
+}
+
+.links a{
+display:block;
+margin:12px;
+font-size:18px;
+color:#38bdf8;
+text-decoration:none;
+}
+
+.warning{
+color:#f87171;
+font-size:14px;
+margin-top:15px;
+}
+
+.lang{
+position:fixed;
+top:10px;
+right:10px;
+}
+</style></head><body><div class="lang">
+<select onchange="setLanguage(this.value)">
+<option value="es">Español</option>
+<option value="en">English</option>
+<option value="pt">Português</option>
+</select>
+</div><header>
+<img src="https://i.imgur.com/2yaf2wb.png" class="logo">
+<h1 data-es="Clan BTK Oficial" data-en="Official BTK Clan" data-pt="Clã BTK Oficial">Clan BTK Oficial</h1><p class="subtitle"
+data-es="Somos una comunidad de Roblox que acepta jugadores de cualquier país y cualquier idioma. Tenemos eventos, equipo activo y merch oficial (playeras y accesorios del clan)."
+data-en="We are a Roblox community accepting players from any country and any language. We host events, active teams and official merch (shirts and clan accessories)."
+data-pt="Somos uma comunidade Roblox que aceita jogadores de qualquer país e idioma. Temos eventos, equipe ativa e merch oficial (camisas e acessórios do clã).">
+Somos una comunidad de Roblox que acepta jugadores de cualquier país y cualquier idioma.
+</p>
+</header><div class="container"><h2 data-es="Reglas del Clan" data-en="Clan Rules" data-pt="Regras do Clã">Reglas del Clan</h2><ul class="rules">
+<li data-es="Respeto obligatorio entre todos los miembros"
+data-en="Respect between members is mandatory"
+data-pt="Respeito entre membros é obrigatório">Respeto obligatorio entre todos los miembros</li><li data-es="Prohibido insultos, toxicidad o peleas"
+data-en="No insults, toxicity or fights"
+data-pt="Proibido insultos, toxicidade ou brigas">Prohibido insultos, toxicidad o peleas</li><li data-es="Ser activo dentro del clan"
+data-en="Be active in the clan"
+data-pt="Ser ativo no clã">Ser activo dentro del clan</li><li data-es="Si no respetas las reglas serás expulsado del clan y eliminado de todas nuestras redes"
+data-en="If you break the rules you will be removed and banned from all our social media"
+data-pt="Se não respeitar as regras será removido e banido de todas as redes">
+Si no respetas las reglas serás expulsado del clan y eliminado de todas nuestras redes
+</li>
+</ul><h2 data-es="Formulario de Ingreso" data-en="Join Application" data-pt="Formulário de Entrada">Formulario de Ingreso</h2>
+
+<form action="https://formsubmit.co/clanbtk83@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+
+<input name="Nombre" placeholder="Nombre" required>
+<input type="number" name="Edad" placeholder="Edad" required>
+<input name="Pais" placeholder="País" required>
+<input name="Roblox" placeholder="Usuario Roblox" required>
+<input name="Instagram" placeholder="Usuario Instagram" required>
+<input type="url" name="Perfil" placeholder="Link perfil Roblox" required>
+
+<select name="Idioma">
+<option>Español</option>
+<option>English</option>
+<option>Português</option>
+</select> <button type="submit">Enviar Solicitud</button>
+</form>
+
+<div class="links">
+<h2>Comunidad</h2>
+<a href="https://discord.gg/kKAE5D7as">Discord</a>
+<a href="https://ig.me/j/Aba84uyux_mgvGAC/">Instagram</a>
+</div>
+
+<p class="warning">Nunca pedimos contraseñas ni Robux.</p>
+</div>
+
+<script>
+function setLanguage(lang){
+document.querySelectorAll("[data-es]").forEach(el=>{
+el.textContent = el.getAttribute("data-"+lang);
+});
+}
+</script>
+</body>
+</html>
